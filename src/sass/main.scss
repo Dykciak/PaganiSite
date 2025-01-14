@@ -142,8 +142,6 @@ body {
 		position: absolute;
 		font-size: 1.8rem;
 		bottom: 30px;
-		left: 50%;
-		transform: translateX(-50%);
 		padding: 0.6em 1.2em;
 		border: none;
 		color: $pure-white;
@@ -159,19 +157,21 @@ body {
 .main {
 	// about-pagani
 	.about-pagani {
+		padding: 4em 0;
 		background-color: $main-color;
 		&__box {
 			display: flex;
 			flex-direction: column;
 			margin: 2em 0;
-
+			align-items: flex-start;
 			&-text {
 				text-align: left;
 				color: $light-white;
-				padding: 1em 0;
 				font-size: 1.4rem;
 				margin-bottom: 1em;
-
+				width: 100%;
+				background-color: #333;
+				padding: 1em;
 				span {
 					font-weight: bold;
 				}
@@ -189,119 +189,41 @@ body {
 			}
 		}
 	}
-	// modele
 	.models {
-		background-color: rgb(0, 0, 0);
-		height: 100vh;
-		position: relative;
-		width: 100%;
 		@include heroImagesWithShadow("../../dist/img/models.webp");
-		background-attachment: scroll;
-		.carousel {
-			padding: 5em 0em;
-			ul {
-				margin: 0;
-				padding: 0;
-				list-style: none;
-			}
-			width: 100%;
-			position: relative;
-			&__btn {
-				position: absolute;
-				z-index: 10;
-				background: none;
-				border: none;
-				font-size: 4.5rem;
-				top: 130%;
-				transform: translateY(-50%);
-				color: rgb(255, 255, 255);
-				// text-shadow: -1px 1px 1px $main-color, 1px -1px 1px $main-color,
-				// 	1px 1px 1px $main-color, -1px -1px 1px $main-color;
-				cursor: pointer;
-				border-radius: 8px;
-				padding: 0.2em;
-				&:focus {
-					outline: 1px solid black;
+		.slide {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			// $__content {
+			// }
+
+			&__card {
+				// $-wrapper {
+				// }
+
+				&-img-box {
+					position: relative;
+					height: 150px;
+					width: 150px;
+					border-radius: 50%;
+					background: $light-white;
+					padding: 0.3em;
+					&-img {
+						height: 100%;
+						width: 100%;
+						object-fit: cover;
+						border-radius: 50%;
+						border: 4px solid #ff0000;
+					}
 				}
-				&:hover,
-				&:focus {
-					color: $pure-white;
-				}
-				&--left {
-					right: -0.5em;
-				}
-				&--right {
-					left: -0.5em;
-				}
+
+				// &__overlay {
+				// }
 			}
 
-			&__slide {
-				position: absolute;
-				inset: 0;
-				opacity: 0;
-				&-img {
-					// border: 2px solid rgb(0, 0, 0);
-					border-bottom: none;
-					display: block;
-					height: 150%;
-					width: 100%;
-					object-fit: cover;
-					object-position: center;
-					border-top-left-radius: 8px;
-					border-top-right-radius: 8px;
-				}
-				&[data-active] {
-					opacity: 1;
-				}
-				&__content {
-					position: absolute;
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					width: 100%;
-					height: 140%;
-					background-color: #000000; //#d7cbc5
-					// background: linear-gradient(135deg, rgba(255,255,255, 0.1), rgba(255,255,255,0));
-					backdrop-filter: blur(2px);
-					border-bottom-left-radius: 8px;
-					border-bottom-right-radius: 8px;
-					padding-bottom: 1em;
-					border: 2px solid rgb(0, 0, 0);
-					&-heading {
-						text-align: center;
-						padding: 0.4em;
-						margin-bottom: 0.4em;
-						color: white;
-						border-bottom: 1px solid rgb(255, 255, 255);
-					}
-					&-text {
-						color: white;
-						text-align: center;
-						padding-bottom: 2em;
-						text-combine-upright: 1.6rem;
-						span {
-							font-weight: 500;
-						}
-						p{
-							margin: .3em 0;
-						}
-						p:nth-child(even) {
-							padding: 0.2em;
-						}
-					}
-				}
-			}
-		}
-		.gallery{
-			position: absolute;
-			font-weight: bold;
-			font-size: 1.8rem;
-			bottom: 20%;
-			left: 50%;
-			transform: translateX(-50%);
-			a{
-				font-weight: normal;
-			}
+			// &__image-content {
+			// }
 		}
 	}
 }
@@ -311,80 +233,32 @@ body {
 // media queries =======================================================================
 // =======================================================================
 // =======================================================================
-@media (min-width: 576px){
-	.main{
-		.models{
-			.carousel{
-				width: 528px;
-				margin: 0 auto;
-			}
 
-		}
-	}
-}
-@media (min-width: 768px) {
-	.header {
-		&__heading {
-			font-size: 6.8rem;
-		}
-	}
-	.burger-btn__box {
-		width: 54px;
-		height: 40px;
-	}
-
-	.burger-btn__bars,
-	.burger-btn__bars::after,
-	.burger-btn__bars::before {
-		height: 4px;
-	}
-	.burger-btn__bars::after {
-		top: 17px;
-	}
-
-	.burger-btn__bars::before {
-		top: 36px;
-	}
-	.burger-btn {
-		padding: 1.33em;
-	}
+@media (min-width: 576px) {
 	.main {
 		.about-pagani {
 			&__box {
-				position: relative;
-				display: flex;
-				flex-direction: row;
-				align-items: stretch;
-				justify-content: flex-start;
+				flex-direction: row; // Change to row for side-by-side layout
 				&-text {
-					text-align: left;
-					font-weight: 300;
-					max-height: 100%;
-					padding-right: 2em;
-					font-size: 2rem;
+					padding: 2em;
+					width: 50%; // Set width to 50%
 				}
 				&-img {
-					margin-bottom: 0;
-					text-align: right;
-				}
-				&-text,
-				&-img {
-					height: auto;
-					width: 50%;
+					margin-left: 1em;
+					width: 50%; // Set width to 50%
 				}
 				&--second {
 					flex-direction: row-reverse;
-
-					p {
-						margin-left: 1em;
-					}
-					.about-pagani__box-text {
-						text-align: right;
+				}
+				&--second {
+					flex-direction: row-reverse;
+					.about-pagani__box-img {
+						margin-right: 1em;
+						margin-left: 0;
 					}
 				}
 			}
 		}
-
 	}
 }
 
@@ -397,97 +271,29 @@ body {
 				}
 			}
 		}
-		.models {
-			.carousel {
-			  padding: 0em 0;
-			  width: 90%;
-			  
-			  ul {
-				display: flex;
-				justify-content: space-between;
-				flex-wrap: wrap;
-			  }
-
-			  .carousel__btn{
-				display: none;
-			  }
-		  
-			  .carousel__slide {
-				opacity: 1;
-				position: relative;
-				width: 30%;
-				height: 300px; 
-				display: flex;
-				flex-direction: column;
-		  
-				.carousel__slide-img {
-				  width: 100%;
-				  height: 134px;
-				  object-position: 50% 75%;
-				  object-fit: cover; 
-				}
-		  
-				.carousel__slide__content {
-				  position: relative;
-				  color: rgb(0, 0, 0);
-				  height: 500px;
-				  width: 100%;
-				  p{
-					margin: .3em 0;
-				  }
-				}
-			  }
-			}
-
-		  }
-		  
-		  
-
-
 	}
 }
 
-@media (min-width: 1200px) {
-	.main {
-		.models {
-			.carousel {
-				width: 80%;
-			  .carousel__slide {
-				.carousel__slide-img {
-				  height: 155px;
-				}
-				.carousel__slide__content{
-					&-text{
-						font-size: 1.8rem;
-					}
-				}
-		  
+// @media (min-width: 1200px) {
+// 	.main {
 
-			  }
-			}
-		  }
-		}
+// 	}
+// }
+
+// animacje
+.bounce-top {
+	-webkit-animation: bounce-top 1.4s 0.6s infinite both;
+	animation: bounce-top 1.4s 0.6s infinite both;
 }
-@media (min-width: 1200px) {
-	.main {
-		.models {
-			.carousel {
-				width: 80%;
-			  .carousel__slide {
-				.carousel__slide-img {
-				  height: 155px;
-				}
-				.carousel__slide__content{
-					&-text{
-						font-size: 1.8rem;
-					}
-				}
-		  
-
-			  }
-			}
-		  }
-		}
+.bounce-left {
+	-webkit-animation: bounce-left 1.4s 0.6s infinite both;
+	animation: bounce-left 1.4s 0.6s infinite both;
+	animation-delay: 2.5s;
+}
+.bounce-right {
+	-webkit-animation: bounce-right 1.4s 0.6s infinite both;
+	animation: bounce-right 1.4s 0.6s infinite both;
+	animation-delay: 2.5s;
 }
 // animacje
 .bounce-top {
@@ -822,7 +628,5 @@ body {
 	}
 }
 
-
-
-//  uwagi końcowe 
+//  uwagi końcowe
 // zmienic kolor na bardziej przyjazny jakis cobalt black czy cos sliderów w sekcji modele

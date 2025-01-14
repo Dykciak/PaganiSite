@@ -64,7 +64,7 @@
 		<!-- main -->
 
 		<main class="main">
-			<section class="about-pagani section-padding" id="about-pagani">
+			<section class="about-pagani " id="about-pagani">
 				<div class="wrapper">
 					<h2 class="section-heading">O marce</h2>
 
@@ -89,12 +89,11 @@
 					<div class="about-pagani__box about-pagani__box--second">
 						<div class="about-pagani__box-text">
 							<p>
-								<span>Fabryka Pagani w San Cesario sul Panaro</span> teraz
-								napisz w podobnej długosci to Miejsce, w którym auta są
-								produkowane Fabryka Pagani w San Cesario sul Panaro to miejsce,
-								gdzie technologia spotyka się z rzemiosłem. Każde auto powstaje
-								ręcznie, łącząc precyzję z pasją, by tworzyć unikatowe dzieła
-								sztuki motoryzacyjnej.
+								<span>Fabryka Pagani w San Cesario sul Panaro</span> to Miejsce,
+								w którym auta są produkowane Fabryka Pagani w San Cesario sul
+								Panaro to miejsce, gdzie technologia spotyka się z rzemiosłem.
+								Każde auto powstaje ręcznie, łącząc precyzję z pasją, by tworzyć
+								unikatowe dzieła sztuki motoryzacyjnej.
 							</p>
 						</div>
 						<div class="about-pagani__box-img">
@@ -111,73 +110,25 @@
 			<!--  ============================================================================================================== -->
 			<section class="models section-padding" id="models">
 				<h2 class="section-heading">Modele</h2>
-				<div class="carousel" data-carousel>
-					<button
-						class="carousel__btn carousel__btn--left bounce-leftd"
-						data-carousel-button="left"
-					>
-						&#10095;
-					</button>
-					<button
-						class="carousel__btn carousel__btn--right bounce-rightd"
-						data-carousel-button="right"
-					>
-						&#10094;
-					</button>
-					<ul data-slides>
-						<li class="carousel__slide" data-active>
-							<img
-								src="./src/img/zonda.webp"
-								alt="pagani zonda 1999"
-								class="carousel__slide-img"
-							/>
-							<div class="carousel__slide__content">
-								<h3 class="carousel__slide__content-heading">Pagani Zonda</h3>
-								<div class="carousel__slide__content-text">
-									<p><span>Rok premiery:</span> 1999</p>
-									<p><span>Silnik:</span> 6.0L V12 wolnossący AMG</p>
-									<p><span>Moc:</span> 550-789KM</p>
-									<p><span>Prędkość maksymalna:</span> ~350km/h</p>
-									<p><span>Cena premierowa:</span> ~1,4mln USD</p>
+				<div class="slide">
+					<div class="slide__content">
+						<div class="slide__card-wrapper">
+							<div class="slide__card">
+								<div class="slide__cardimage-content">
+									<span class="slide__overlay"></span>
+									<div class="slide__card-img-box">
+										<img
+											src="./dist/img/zonda.webp"
+											alt="Blue Pagani Zonda"
+											class="slide__card-img-box-img"
+										/>
+									</div>
 								</div>
 							</div>
-						</li>
-						<li class="carousel__slide">
-							<img
-							src="./src/img/huayra.webp"
-							alt="pagani huayra 2011 "
-							class="carousel__slide-img"
-							/>
-							<div class="carousel__slide__content">
-								<h3 class="carousel__slide__content-heading">Pagani Huayra</h3>
-								<div class="carousel__slide__content-text">
-									<p><span>Rok premiery:</span> 2011</p>
-									<p><span>Silnik:</span> 6.0L V12 Biturbo AMG</p>
-									<p><span>Moc:</span> 720–850 KM</p>
-									<p><span>Prędkość maksymalna:</span> ~380km/h</p>
-									<p><span>Cena premierowa:</span> ~2,6mln USD</p>
-								</div>
-							</div>
-						</li>
-						<li class="carousel__slide">
-							<img
-								src="./src/img/utopia.webp"
-								alt="pagani utopia 2023"
-								class="carousel__slide-img"
-							/>
-							<div class="carousel__slide__content">
-								<h3 class="carousel__slide__content-heading">Pagani Utopia</h3>
-								<div class="carousel__slide__content-text">
-									<p><span>Rok premiery:</span> 2022</p>
-									<p><span>Silnik:</span> 6.0L V12 wolnossący AMG</p>
-									<p><span>Moc:</span> 864 KM</p>
-									<p><span>Prędkość maksymalna:</span> ~355km/h</p>
-									<p><span>Cena premierowa:</span> ~3mln USD</p>
-								</div>
-							</div>
-						</li>
-					</ul>
+						</div>
+					</div>
 				</div>
+
 				<!-- <p class="gallery">Zobacz galerię samochodów Pagani! <a href="./gallery.html">Kliknij tutaj</a></p> -->
 			</section>
 			<section class="contact">
@@ -186,5 +137,4 @@
 		</main>
 		<script src="./dist/js/main_min.js"></script>
 	</body>
-	</html>
-	
+</html>
