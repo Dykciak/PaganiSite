@@ -1,0 +1,45 @@
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.section-heading {
+	position: relative;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: 3rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+	color: $pure-white;
+	letter-spacing: 2px;
+}
+
+.section-padding {
+	padding: 5em 1em;
+} // zmienic to na wiekszej rozdzielcozsi
+
+.line {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 2px;
+	background-color: white;
+}
+// --------------------------------------------
+// ----------------- *media* ------------------
+// --------------------------------------------
+
+@media (min-width: 768px) {
+	.section-heading {
+		font-size: 3.6rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.section-heading {
+		font-size: 4.8rem;
+	}
+}

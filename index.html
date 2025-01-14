@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pagani</title>
+		<!-- fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- second -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- font awesome -->
+		<script
+			src="https://kit.fontawesome.com/99cfad193b.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- css -->
+		<link rel="stylesheet" href="./dist/css/main_min.css" />
+	</head>
+	<body>
+		<!-- burger btn -->
+		<button class="burger-btn">
+			<div class="burger-btn__box">
+				<div class="burger-btn__bars"></div>
+			</div>
+		</button>
+		<!-- nav -->
+		<nav class="nav">
+			<div class="wrapper">
+				<div class="nav__items">
+					<a href="#" class="nav__logo"
+						><img
+							src="./dist/img/pagani.png"
+							alt="pagani logo"
+							class="nav__logo-img"
+					/></a>
+					<a href="#about-pagani" class="nav__item">O marce</a>
+					<a href="#models" class="nav__item">Modele</a>
+					<a href="#faq" class="nav__item">Galeria</a>
+					<a href="#contact" class="nav__item">Ciekawostki</a>
+					<a href="#contact" class="nav__item">Kontakt</a>
+				</div>
+			</div>
+		</nav>
+		<!--  -->
+		<header class="header">
+			<div class="header__shadow">
+				<h1 class="header__heading">Pagani</h1>
+				<!-- <p class="header__text">Strona</p> -->
+				<a href="#about-pagani" class="header__btn bounce-top"
+					><i class="fa-solid fa-angle-down"></i
+				></a>
+			</div>
+		</header>
+		<!-- main -->
+
+		<main class="main">
+			<section class="about-pagani section-padding" id="about-pagani">
+				<div class="wrapper">
+					<h2 class="section-heading">O marce</h2>
+
+					<div class="about-pagani__box">
+						<div class="about-pagani__box-text">
+							<p>
+								<span>Pagani Automobili</span> to włoska marka luksusowych
+								supersamochodów, założona w 1992 roku przez Horacio Paganiego.
+								Firma łączy sztukę z najnowocześniejszą technologią, tworząc
+								unikalne, ręcznie wykonane auta z użyciem materiałów takich jak
+								włókno węglowe i tytan.
+							</p>
+						</div>
+						<div class="about-pagani__box-img">
+							<img
+								src="./src/img/horacio-pagani.webp"
+								alt="xxx"
+								class="about-pagani__img"
+							/>
+						</div>
+					</div>
+					<div class="about-pagani__box about-pagani__box--second">
+						<div class="about-pagani__box-text">
+							<p>
+								<span>Fabryka Pagani w San Cesario sul Panaro</span> teraz
+								napisz w podobnej długosci to Miejsce, w którym auta są
+								produkowane Fabryka Pagani w San Cesario sul Panaro to miejsce,
+								gdzie technologia spotyka się z rzemiosłem. Każde auto powstaje
+								ręcznie, łącząc precyzję z pasją, by tworzyć unikatowe dzieła
+								sztuki motoryzacyjnej.
+							</p>
+						</div>
+						<div class="about-pagani__box-img">
+							<img
+								src="./src/img/pagani-atelier.webp"
+								alt="Pagani Atelier"
+								class="about-pagani__img"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="line"></div>
+			<!--  ============================================================================================================== -->
+			<section class="models section-padding" id="models">
+				<h2 class="section-heading">Modele</h2>
+				<div class="carousel" data-carousel>
+					<button
+						class="carousel__btn carousel__btn--left bounce-leftd"
+						data-carousel-button="left"
+					>
+						&#10095;
+					</button>
+					<button
+						class="carousel__btn carousel__btn--right bounce-rightd"
+						data-carousel-button="right"
+					>
+						&#10094;
+					</button>
+					<ul data-slides>
+						<li class="carousel__slide" data-active>
+							<img
+								src="./src/img/zonda.webp"
+								alt="pagani zonda 1999"
+								class="carousel__slide-img"
+							/>
+							<div class="carousel__slide__content">
+								<h3 class="carousel__slide__content-heading">Pagani Zonda</h3>
+								<div class="carousel__slide__content-text">
+									<p><span>Rok premiery:</span> 1999</p>
+									<p><span>Silnik:</span> 6.0L V12 wolnossący AMG</p>
+									<p><span>Moc:</span> 550-789KM</p>
+									<p><span>Prędkość maksymalna:</span> ~350km/h</p>
+									<p><span>Cena premierowa:</span> ~1,4mln USD</p>
+								</div>
+							</div>
+						</li>
+						<li class="carousel__slide">
+							<img
+							src="./src/img/huayra.webp"
+							alt="pagani huayra 2011 "
+							class="carousel__slide-img"
+							/>
+							<div class="carousel__slide__content">
+								<h3 class="carousel__slide__content-heading">Pagani Huayra</h3>
+								<div class="carousel__slide__content-text">
+									<p><span>Rok premiery:</span> 2011</p>
+									<p><span>Silnik:</span> 6.0L V12 Biturbo AMG</p>
+									<p><span>Moc:</span> 720–850 KM</p>
+									<p><span>Prędkość maksymalna:</span> ~380km/h</p>
+									<p><span>Cena premierowa:</span> ~2,6mln USD</p>
+								</div>
+							</div>
+						</li>
+						<li class="carousel__slide">
+							<img
+								src="./src/img/utopia.webp"
+								alt="pagani utopia 2023"
+								class="carousel__slide-img"
+							/>
+							<div class="carousel__slide__content">
+								<h3 class="carousel__slide__content-heading">Pagani Utopia</h3>
+								<div class="carousel__slide__content-text">
+									<p><span>Rok premiery:</span> 2022</p>
+									<p><span>Silnik:</span> 6.0L V12 wolnossący AMG</p>
+									<p><span>Moc:</span> 864 KM</p>
+									<p><span>Prędkość maksymalna:</span> ~355km/h</p>
+									<p><span>Cena premierowa:</span> ~3mln USD</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- <p class="gallery">Zobacz galerię samochodów Pagani! <a href="./gallery.html">Kliknij tutaj</a></p> -->
+			</section>
+			<section class="contact">
+				<!-- tutaj zrobic przycisk znajdz najblizszego delaera i w jakims pliku loc.js zrobic z 5 miejsc w europie i tam w danych wpisac latitude i  -->
+			</section>
+		</main>
+		<script src="./dist/js/main_min.js"></script>
+	</body>
+	</html>
+	
