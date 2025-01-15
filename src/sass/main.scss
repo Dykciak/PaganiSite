@@ -201,6 +201,9 @@ body {
 			&__card {
 				// $-wrapper {
 				// }
+				border-radius: 25px;
+				background-color: #fff;
+
 
 				&-img-box {
 					position: relative;
@@ -222,8 +225,9 @@ body {
 				// }
 			}
 
-			// &__image-content {
-			// }
+			&__image-content {
+				
+			}
 		}
 	}
 }
