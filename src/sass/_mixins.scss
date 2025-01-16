@@ -18,7 +18,6 @@
 	background-image: $shadow, url($bgImg);
 	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
 }
 
 @mixin shadowHeader {

@@ -170,7 +170,7 @@ body {
 				font-size: 1.4rem;
 				margin-bottom: 1em;
 				width: 100%;
-				background-color: #333;
+				background-color: $secondary-color;
 				padding: 1em;
 				span {
 					font-weight: bold;
@@ -195,43 +195,80 @@ body {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			// $__content {
-			// }
 
 			&__card {
-				// $-wrapper {
-				// }
-				border-radius: 25px;
-				background-color: #fff;
-
+				position: relative;
+				width: 100%;
+				max-width: 320px;
+				border-radius: 8px;
+				background-color: $pure-white;
+				background-color: #0c0c0cb0;
+				backdrop-filter: blur(4px);
 
 				&-img-box {
 					position: relative;
-					height: 150px;
-					width: 150px;
-					border-radius: 50%;
-					background: $light-white;
 					padding: 0.3em;
 					&-img {
 						height: 100%;
 						width: 100%;
 						object-fit: cover;
-						border-radius: 50%;
-						border: 4px solid #ff0000;
+						border-top-left-radius: 8px;
+						border-bottom-right-radius: 8px;
 					}
 				}
-
-				// &__overlay {
-				// }
-			}
-
-			&__image-content {
-				
+				&__text-content {
+					margin: 0 0.4em;
+					padding: 1em 1.5em;
+					color: $light-white2;
+					&-heading {
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						h3 {
+							font-size: 2.2rem;
+							font-weight: normal;
+							margin: 0;
+							white-space: nowrap;
+						}
+						.line {
+							width: 100%;
+							flex-grow: 1;
+							height: 2px;
+							background-color: $light-white2;
+							margin-left: 0.5em;
+						}
+					}
+					&-desc {
+						span {
+							font-weight: 500;
+						}
+						margin-bottom: 3em;
+					}
+					&-icons {
+						display: flex;
+						flex-direction: row;
+						justify-content: space-between;
+						width: 100%;
+					}
+				}
+				&__image-content,
+				&__text-content {
+					display: flex;
+					flex-direction: column;
+					align-items: stretch;
+				}
+				&__image-content {
+					padding: 0 1.5em;
+				}
 			}
 		}
 	}
 }
 
+.swiper {
+	width: 600px;
+	height: 300px;
+}
 // =======================================================================
 // =======================================================================
 // media queries =======================================================================

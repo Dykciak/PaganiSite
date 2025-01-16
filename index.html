@@ -4,6 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Pagani</title>
+		<!-- swiper -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
 		<!-- fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -64,7 +69,7 @@
 		<!-- main -->
 
 		<main class="main">
-			<section class="about-pagani " id="about-pagani">
+			<section class="about-pagani" id="about-pagani">
 				<div class="wrapper">
 					<h2 class="section-heading">O marce</h2>
 
@@ -114,6 +119,12 @@
 					<div class="slide__content">
 						<div class="slide__card-wrapper">
 							<div class="slide__card">
+								<div class="slide__card__text-content">
+									<div class="slide__card__text-content-heading">
+										<h3>Pagani Zonda</h3>
+										<div class="line"></div>
+									</div>
+								</div>
 								<div class="slide__card__image-content">
 									<span class="slide__overlay"></span>
 									<div class="slide__card-img-box">
@@ -125,11 +136,27 @@
 									</div>
 								</div>
 								<div class="slide__card__text-content">
-									<h2>Pagani Zonda</h2>
+									<p class="slide__card__text-content-desc">
+										<!-- rok w lewym dolnym rogu, cena w prawym dolnym rogu, a pozostałę parametry w krótkim opisie -->
+
+										Silnik <span>AMG V12 7.3L</span> (do 789 KM), osiągającym
+										<span>350 km/h</span>. Wykonana z włókna węglowego, oferuje
+										ekstremalne osiągi i unikalny design, łącząc technologię
+										wyścigową z luksusem.
+									</p>
+									<div class="slide__card__text-content-icons">
+										<p><i class="fa-regular fa-calendar"></i> 1999</p>
+										<p><i class="fa-solid fa-horse"></i> 550KM - 789KM</p>
+									</div>
 								</div>
 							</div>
+
+
 						</div>
 					</div>
+					<!-- <div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-pagination"></div> -->
 				</div>
 
 				<!-- <p class="gallery">Zobacz galerię samochodów Pagani! <a href="./gallery.html">Kliknij tutaj</a></p> -->
@@ -138,6 +165,10 @@
 				<!-- tutaj zrobic przycisk znajdz najblizszego delaera i w jakims pliku loc.js zrobic z 5 miejsc w europie i tam w danych wpisac latitude i  -->
 			</section>
 		</main>
+		<!-- swiper -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+		<!-- my js -->
 		<script src="./dist/js/main_min.js"></script>
 	</body>
 </html>
