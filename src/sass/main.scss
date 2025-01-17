@@ -23,8 +23,8 @@ body {
 .nav {
 	&__logo {
 		&-img {
-			height: 20%;
 			width: 36%;
+			height: 20%;
 		}
 	}
 }
@@ -70,7 +70,6 @@ body {
 		}
 	}
 }
-//
 
 .nav {
 	position: fixed;
@@ -194,12 +193,14 @@ body {
 		.slide {
 			z-index: 1;
 			display: flex;
-			align-items: center;
-			justify-content: center;
-			height: 400px;
+			// align-items: stretch;
+			// height: 400px;
 			&__card {
 				position: relative;
+				display: flex;
+				flex-direction: column;
 				width: 100%;
+				height: 100%;
 				max-width: 320px;
 				border-radius: 8px;
 				background-color: $pure-white;
@@ -217,9 +218,13 @@ body {
 					}
 				}
 				&__text-content {
+					display: flex;
+					flex-direction: column;
+					height: 100%;
 					margin: 0 0.4em;
 					padding: 1em 1.5em;
 					color: $light-white2;
+					flex-grow: 1;
 					&-heading {
 						display: flex;
 						align-items: center;
@@ -232,7 +237,6 @@ body {
 						}
 						.line {
 							width: 100%;
-							flex-grow: 1;
 							height: 2px;
 							background-color: $light-white2;
 							margin-left: 0.5em;
@@ -255,9 +259,10 @@ body {
 				&__text-content {
 					display: flex;
 					flex-direction: column;
-					align-items: stretch;
+					height: 100%;
 				}
 				&__image-content {
+					flex-grow: 1;
 					padding: 0 1.5em;
 				}
 			}
@@ -290,12 +295,12 @@ body {
 			&__box {
 				flex-direction: row; // Change to row for side-by-side layout
 				&-text {
-					padding: 2em;
 					width: 50%; // Set width to 50%
+					padding: 2em;
 				}
 				&-img {
-					margin-left: 1em;
 					width: 50%; // Set width to 50%
+					margin-left: 1em;
 				}
 				&--second {
 					flex-direction: row-reverse;
@@ -342,6 +347,10 @@ body {
 			.swiper-pagination {
 				display: none;
 			}
+			.swiper-wrapper {
+				display: flex;
+				justify-content: center;
+			}
 		}
 	}
 }
@@ -351,6 +360,20 @@ body {
 			&__box {
 				&-text {
 					font-size: 2.4rem;
+				}
+			}
+		}
+		.models {
+			.slide {
+				&__card {
+					&__text-content {
+						font-size: 1.75rem;
+						&-heading {
+							h3 {
+								font-size: 2.4rem;
+							}
+						}
+					}
 				}
 			}
 		}

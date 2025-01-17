@@ -48,7 +48,7 @@ const handleNavItemsAnimation = () => {
 };
 var swiper = new Swiper(".mySwiper", {
 	slidesPerView: 1,
-	spaceBetween: 10,
+	spaceBetween: 15,
 	loop: true,
 	pagination: {
 		el: ".swiper-pagination",
@@ -63,8 +63,9 @@ var swiper = new Swiper(".mySwiper", {
 	},
 	breakpoints: {
 		768: {
-			slidesPerView: 3, // Wyświetla 3 karty obok siebie
-			spaceBetween: 20, // Odstępy między kartami
+			enable: false,
+			loop: false,
+			slidesPerView: "auto",
 		},
 	},
 });
