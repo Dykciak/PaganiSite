@@ -47,10 +47,9 @@ const handleNavItemsAnimation = () => {
 	});
 };
 
-
 var swiper = new Swiper(".mySwiper", {
 	slidesPerView: 1,
-	spaceBetween: 30,
+	spaceBetween: 10,
 	loop: true,
 	pagination: {
 		el: ".swiper-pagination",
@@ -59,6 +58,12 @@ var swiper = new Swiper(".mySwiper", {
 	navigation: {
 		nextEl: ".swiper-button-next",
 		prevEl: ".swiper-button-prev",
+	},
+	autoplay: {
+		delay: 5000,
+	},
+	grid: {
+		rows: 1,
 	},
 });
 
