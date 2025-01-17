@@ -46,7 +46,6 @@ const handleNavItemsAnimation = () => {
 		delayTime++;
 	});
 };
-
 var swiper = new Swiper(".mySwiper", {
 	slidesPerView: 1,
 	spaceBetween: 10,
@@ -62,8 +61,11 @@ var swiper = new Swiper(".mySwiper", {
 	autoplay: {
 		delay: 5000,
 	},
-	grid: {
-		rows: 1,
+	breakpoints: {
+		768: {
+			slidesPerView: 3, // Wyświetla 3 karty obok siebie
+			spaceBetween: 20, // Odstępy między kartami
+		},
 	},
 });
 
