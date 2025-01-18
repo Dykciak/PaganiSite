@@ -132,7 +132,7 @@ body {
 		font-family: "Playfair Display", serif;
 		font-size: 4.8rem;
 		padding-top: 5px;
-		font-weight: 400;
+		font-weight: 100;
 	}
 	&__text {
 		font-size: 1.4rem;
@@ -268,6 +268,51 @@ body {
 			}
 		}
 	}
+	.gallery {
+		width: 100%;
+		overflow: hidden;
+		background-color: $main-color;
+		&__box {
+			&-imgbox {
+				position: relative;
+				overflow: hidden;
+				img {
+					height: 100%;
+					width: 300px;
+				}
+				.whats-model {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background-color: rgba(0, 0, 0, 0.5);
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					color: #fff;
+					font-size: 1.8rem;
+					opacity: 0;
+					transition: opacity 0.3s ease-in-out;
+					h3 {
+						font-weight: 100;
+					}
+				}
+
+				&:hover .whats-model {
+					opacity: 1;
+				}
+			}
+		}
+		.more-photos {
+			text-align: center;
+			color: $light-white;
+			a {
+				color: $light-white;
+				text-transform: uppercase;
+			}
+		}
+	}
 }
 
 .swiper {
@@ -283,6 +328,19 @@ body {
 	background-color: $main-color;
 }
 
+.variable-width {
+	margin: 20px auto;
+	max-width: 80%;
+	.slick-slide {
+		text-align: center;
+		background: $main-color;
+		// border: 1px solid #aaa;
+		margin: 20px;
+	}
+}
+.slick-list {
+	overflow: visible;
+}
 // =======================================================================
 // =======================================================================
 // media queries =======================================================================
@@ -317,6 +375,14 @@ body {
 	}
 }
 @media (min-width: 768px) {
+	.header {
+		&__heading {
+			font-size: 6.8rem;
+		}
+	}
+	.fa-angle-down {
+		font-size: 3.5rem;
+	}
 	.main {
 		.models {
 			.slide {
@@ -355,6 +421,11 @@ body {
 	}
 }
 @media (min-width: 992px) {
+	.header {
+		&__heading {
+			font-size: 7.8rem;
+		}
+	}
 	.main {
 		.about-pagani {
 			&__box {
@@ -376,15 +447,50 @@ body {
 					}
 				}
 			}
+			.swiper-slide {
+				margin: 20px;
+			}
+		}
+		.gallery {
+			&__box {
+				&-imgbox {
+					img {
+						height: 100%;
+						width: 500px;
+					}
+					.whats-model {
+						font-size: 2.4rem;
+					}
+				}
+			}
 		}
 	}
 }
 
-// @media (min-width: 1200px) {
-// 	.main {
-
-// 	}
-// }
+@media (min-width: 1200px) {
+	.main {
+		.models {
+			.slide {
+				&__card {
+					&__text-content {
+						font-size: 2rem;
+						font-weight: 300;
+					}
+				}
+			}
+		}
+		.gallery {
+			&__box {
+				&-imgbox {
+					img {
+						height: 100%;
+						width: 700px;
+					}
+				}
+			}
+		}
+	}
+}
 
 // animacje
 .bounce-top {

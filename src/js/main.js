@@ -70,4 +70,25 @@ var swiper = new Swiper(".mySwiper", {
 	},
 });
 
+$(document).ready(function () {
+	// co 2 sekundy
+	$(".variable-width").slick({
+		dots: true,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 3,
+		centerMode: true,
+		variableWidth: true,
+		arrows: false,
+		dots: false,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		cssEase: "ease-in-out",
+		pauseOnHover: false,
+		draggable: true,
+		swipe: false,
+		touchMove: false,
+	});
+});
+
 document.addEventListener("DOMContentLoaded", main);
