@@ -65,9 +65,10 @@ function convertImg(done) {
 
 function startBrowserSync(done) {
 	browserSync.init({
-		server: {
+		server: {	
 			baseDir: "./",
 		},
+		port: 4000,
 	});
 
 	done();
