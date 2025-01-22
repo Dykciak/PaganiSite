@@ -37,6 +37,12 @@ body {
 	border: 1px solid transparent;
 	cursor: pointer;
 	z-index: 1000000000;
+	&:hover {
+		.burger-btn__bars::after,
+		.burger-btn__bars::before {
+			width: 100%;
+		}
+	}
 	&:focus {
 		outline: none;
 		border: 1px solid rgba(255, 255, 255, 0.5);
@@ -47,6 +53,7 @@ body {
 		width: 40px;
 		height: 30px;
 	}
+
 	&__bars,
 	&__bars::after,
 	&__bars::before {
@@ -61,11 +68,11 @@ body {
 		width: 100%;
 		&::after {
 			top: 13px;
-			width: 100%;
+			width: 60%;
 		}
 		&::before {
 			top: 27px;
-			width: 100%;
+			width: 30%;
 			transition-delay: 0.1s;
 		}
 	}
@@ -97,6 +104,20 @@ body {
 		font-size: 2.8rem;
 		font-weight: 300;
 		text-decoration: none;
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 3px;
+			height: 100%;
+			transform: scaleY(0);
+			background-color: $pure-white;
+			transition: transform 0.3s;
+			content: "";
+		}
+		&:hover::before {
+			transform: scaleY(1);
+		}
 	}
 	&__logo {
 		display: none;
@@ -314,7 +335,10 @@ body {
 		}
 	}
 	.performance {
-		background-color: $main-color2;
+		// background-color: $main-color2;
+		@include heroImagesWithShadow("../../dist/img/huayrartrack.jpg");
+		// @include heroImagesWithShadow("../../dist/img/huayrartrackblur.png");
+
 		&__box {
 			margin-top: 4em;
 			&-item {
@@ -323,24 +347,18 @@ body {
 				width: 100%;
 				align-items: center;
 				justify-content: center;
+				margin-top: 2em;
 				&-text,
 				&-score {
 					color: $light-white;
 				}
 				&-text {
 					margin: 0.4em 0;
-					font-size: 1.6rem;
+					font-size: 2.2rem;
 				}
 				&-score {
 					font-weight: 800;
 					font-size: 2.4rem;
-					line-height: 1;
-					transition: 0.5s transform;
-					display: inline-block;
-
-					&:hover {
-						transform: scale(1.2);
-					}
 				}
 
 				&-icon {
@@ -351,6 +369,10 @@ body {
 						font-size: 4.8rem;
 						margin: 0.6em 0;
 						color: $light-white;
+						transition: 0.5s transform;
+						&:hover {
+							transform: scale(1.2);
+						}
 					}
 					img {
 						width: 150px;
@@ -526,6 +548,14 @@ body {
 						font-size: 2.4rem;
 					}
 				}
+			}
+		}
+		.performance {
+			&__box {
+				display: flex;
+			}
+			.small-line {
+				display: none;
 			}
 		}
 	}
