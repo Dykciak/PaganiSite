@@ -22,6 +22,7 @@ body {
 
 .nav {
 	&__logo {
+		display: block;
 		&-img {
 			width: 36%;
 			height: 20%;
@@ -119,9 +120,9 @@ body {
 			transform: scaleY(1);
 		}
 	}
-	&__logo {
-		display: none;
-	}
+	// &__logo {
+	// 	display: none;
+	// }
 }
 
 @keyframes navItemsAnimation {
@@ -336,8 +337,8 @@ body {
 	}
 	.performance {
 		// background-color: $main-color2;
-		@include heroImagesWithShadow("../../dist/img/huayrartrack.jpg");
-		// @include heroImagesWithShadow("../../dist/img/huayrartrackblur.png");
+		// @include heroImagesWithShadow("../../dist/img/huayrartrack.jpg");
+		@include heroImagesWithShadow("../../dist/img/huayrartrackblur.png");
 
 		&__box {
 			margin-top: 4em;
@@ -511,6 +512,68 @@ body {
 		&__heading {
 			font-size: 7.8rem;
 		}
+	}
+	.nav {
+		display: flex;
+		height: auto;
+		background-image: none;
+		transform: translateX(0);
+		transition: none;
+
+		&__items {
+			display: flex;
+			justify-content: flex-end; // Zmiana: z prawej strony
+			align-items: center;
+			width: 100%;
+			height: 100%;
+		}
+
+		&__logo {
+			display: block;
+			margin-right: auto;
+			padding: 0.4em 0.5em;
+			color: $pure-white;
+			text-decoration: none;
+			font-weight: bold;
+			transition: color 0.3s;
+			cursor: pointer;
+			&:hover {
+				color: $white-hover;
+			}
+		}
+		&__item,
+		&__item::after,
+		&__item::before {
+			transition: 0.3s;
+		}
+		&__item {
+			position: relative;
+			margin: 0;
+			padding: 0.4em 0.7em 0.1em;
+			font-size: 2.2rem;
+			border: none;
+			border-bottom: none;
+			text-transform: uppercase;
+			animation: all 0.3s;
+			&:hover::before {
+				transform: scaleY(0);
+			}
+			&:hover {
+				background-color: none;
+			}
+		}
+
+		&--active {
+			transform: translateX(0);
+		}
+
+		&.nav-items-animation {
+			animation: none; // Wyłączenie animacji dla desktopu
+		}
+	}
+
+	.burger-btn {
+		display: none; // Ukrycie przycisku burgera na desktopie
 	}
 	.main {
 		.about-pagani {
