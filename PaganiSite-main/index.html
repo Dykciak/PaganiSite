@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pagani</title>
+		<!-- swiper -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<!-- slick -->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
+
+		<!-- fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- second -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- font awesome -->
+		<script
+			src="https://kit.fontawesome.com/99cfad193b.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- css -->
+		<link rel="stylesheet" href="./dist/css/main_min.css" />
+	</head>
+	<body>
+		<!-- burger btn -->
+		<button class="burger-btn">
+			<div class="burger-btn__box">
+				<div class="burger-btn__bars"></div>
+			</div>
+		</button>
+		<!-- nav -->
+		<nav class="nav">
+			<div class="wrapper">
+				<div class="nav__items">
+					<a href="#about-pagani" class="nav__item">O marce</a>
+					<a href="#models" class="nav__item">Modele</a>
+					<a href="#performance" class="nav__item">Osiągi</a>
+					<a href="#gallery" class="nav__item">Galeria</a>
+					<a href="#contact" class="nav__item">Kontakt</a>
+				</div>
+			</div>
+		</nav>
+		<!--  -->
+		<header class="header">
+			<div class="header__shadow">
+				<h1 class="header__heading">Pagani</h1>
+				<!-- <p class="header__text">Strona</p> -->
+				<a href="#about-pagani" class="header__btn bounce-top"
+					><i class="fa-solid fa-angle-down"></i
+				></a>
+			</div>
+		</header>
+		<!-- main -->
+
+		<main class="main">
+			<section class="about-pagani" id="about-pagani">
+				<div class="wrapper">
+					<h2 class="section-heading">O marce</h2>
+
+					<div class="about-pagani__box">
+						<div class="about-pagani__box-text">
+							<p>
+								<span>Pagani Automobili</span> to włoska marka luksusowych
+								supersamochodów, założona w 1992 roku przez Horacio Paganiego.
+								Firma łączy sztukę z najnowocześniejszą technologią, tworząc
+								unikalne, ręcznie wykonane auta z użyciem materiałów takich jak
+								włókno węglowe i tytan.
+							</p>
+						</div>
+						<div class="about-pagani__box-img">
+							<img
+								src="./src/img/horacio-pagani.webp"
+								alt="xxx"
+								class="about-pagani__img"
+							/>
+						</div>
+					</div>
+					<div class="about-pagani__box about-pagani__box--second">
+						<div class="about-pagani__box-text">
+							<p>
+								<span>Fabryka Pagani w San Cesario sul Panaro</span> to Miejsce,
+								w którym auta są produkowane Fabryka Pagani w San Cesario sul
+								Panaro to miejsce, gdzie technologia spotyka się z rzemiosłem.
+								Każde auto powstaje ręcznie, łącząc precyzję z pasją, by tworzyć
+								unikatowe dzieła sztuki motoryzacyjnej.
+							</p>
+						</div>
+						<div class="about-pagani__box-img">
+							<img
+								src="./src/img/pagani-atelier.webp"
+								alt="Pagani Atelier"
+								class="about-pagani__img"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="line"></div>
+			<!--  ============================================================================================================== -->
+			<section class="models section-padding" id="models">
+				<h2 class="section-heading">Modele</h2>
+				<div class="swiper mySwiper slide">
+					<div class="swiper-wrapper">
+						<div class="slide__card swiper-slide">
+							<div class="slide__card__text-content">
+								<div class="slide__card__text-content-heading">
+									<h3>Pagani Zonda</h3>
+									<div class="line"></div>
+								</div>
+							</div>
+							<div class="slide__card__image-content">
+								<span class="slide__overlay"></span>
+								<div class="slide__card-img-box">
+									<img
+										src="./dist/img/zonda.webp"
+										alt="Blue Pagani Zonda"
+										class="slide__card-img-box-img"
+									/>
+								</div>
+							</div>
+							<div class="slide__card__text-content">
+								<p class="slide__card__text-content-desc">
+									<!-- rok w lewym dolnym rogu, cena w prawym dolnym rogu, a pozostałę parametry w krótkim opisie -->
+
+									Silnik <span>AMG V12 6.0L</span> (400 KM), prędkość maksymalna
+									<span>320 km/h</span>. Wykonana z włókna węglowego, 0-100 km/h
+									w 4,0 sekundy. <br /><br />
+								</p>
+								<div class="slide__card__text-content-icons">
+									<p><i class="fa-regular fa-calendar"></i> 1999</p>
+									<p><i class="fa-solid fa-horse"></i> 550KM - 789KM</p>
+								</div>
+							</div>
+						</div>
+						<div class="slide__card swiper-slide">
+							<div class="slide__card__text-content">
+								<div class="slide__card__text-content-heading">
+									<h3>Pagani Huayra</h3>
+									<div class="line"></div>
+								</div>
+							</div>
+							<div class="slide__card__image-content">
+								<span class="slide__overlay"></span>
+								<div class="slide__card-img-box">
+									<img
+										src="./dist/img/huayra.webp"
+										alt="Pagani Huayra"
+										class="slide__card-img-box-img"
+									/>
+								</div>
+							</div>
+							<div class="slide__card__text-content">
+								<p class="slide__card__text-content-desc">
+									<!-- rok w lewym dolnym rogu, cena w prawym dolnym rogu, a pozostałę parametry w krótkim opisie -->
+									Silnik <span>AMG V12 6.0L</span> (730 KM), prędkość maksymalna
+									<span>370 km/h</span>. Wykonana z włókna węglowego, 0-100 km/h
+									w 3,0 sekundy. <br /><br />
+								</p>
+								<div class="slide__card__text-content-icons">
+									<p><i class="fa-regular fa-calendar"></i> 1999</p>
+									<p><i class="fa-solid fa-horse"></i> 550KM - 789KM</p>
+								</div>
+							</div>
+						</div>
+						<div class="slide__card swiper-slide">
+							<div class="slide__card__text-content">
+								<div class="slide__card__text-content-heading">
+									<h3>Pagani Utopia</h3>
+									<div class="line"></div>
+								</div>
+							</div>
+							<div class="slide__card__image-content">
+								<span class="slide__overlay"></span>
+								<div class="slide__card-img-box">
+									<img
+										src="./dist/img/utopia.webp"
+										alt="Pagani Utopia"
+										class="slide__card-img-box-img"
+									/>
+								</div>
+							</div>
+							<div class="slide__card__text-content">
+								<p class="slide__card__text-content-desc">
+									<!-- rok w lewym dolnym rogu, cena w prawym dolnym rogu, a pozostałę parametry w krótkim opisie -->
+
+									Silnik <span>AMG V12 6.0L</span> (864 KM), prędkość maksymalna
+									<span>370 km/h</span>. Włókno węglowe, zaawansowana
+									aerodynamika, 0-100 km/h w 2,9 sekundy.
+								</p>
+								<div class="slide__card__text-content-icons">
+									<p><i class="fa-regular fa-calendar"></i> 1999</p>
+									<p><i class="fa-solid fa-horse"></i> 550KM - 789KM</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-pagination"></div>
+				</div>
+
+				<!-- <p class="gallery">Zobacz galerię samochodów Pagani! <a href="./gallery.html">Kliknij tutaj</a></p> -->
+			</section>
+			<section class="performance section-padding" id="performance">
+				<h2 class="section-heading">Osiągi</h2>
+				<div class="performance__box">
+					<div class="performance__box-item">
+						<p class="performance__box-item-score">Spa-Francorchamps</p>
+						<p class="performance__box-item-text">
+							Pagani Huayra BC Roadster - 2:23
+						</p>
+						<div class="performance__box-item-icon">
+							<!-- <img src="./dist/img/spa.png" alt="ikona toru circuit de spa" /> -->
+							<i class="fa-solid fa-road"></i>
+						</div>
+						<div class="performance__box-item-related">
+							<p>Koenigsegg One 1 - 2:32</p>
+							<p>McLaren P1 - 2:38</p>
+							<p>Ferrari LaFerrari - 2:48</p>
+						</div>
+					</div>
+					<div class="small-line"></div>
+					<div class="performance__box-item">
+						<p class="performance__box-item-score">0-100 km/h</p>
+						<p class="performance__box-item-text">Pagani Imola - 2.8s</p>
+						<div class="performance__box-item-icon">
+							<i class="fa-solid fa-stopwatch"></i>
+						</div>
+						<div class="performance__box-item-related">
+							<p>Lamborghini Veneno 1 - 2.8s</p>
+							<p>Koenigsegg Agera RS - 3.0s</p>
+							<p>Ferrari LaFerrari - 3.2s</p>
+						</div>
+					</div>
+					<div class="small-line"></div>
+					<div class="performance__box-item">
+						<p class="performance__box-item-score">Top speed</p>
+						<p class="performance__box-item-text">
+							Pagani Huayra NC - 383 km/h
+						</p>
+						<div class="performance__box-item-icon">
+							<i class="fa-solid fa-jet-fighter"></i>
+						</div>
+						<div class="performance__box-item-related">
+							<p>McLaren Speedtail - 369 km/h</p>
+							<p>Lamborghini Sián - 355 km/h</p>
+							<p>Lexus LFA - 325 km/h</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="gallery section-padding" id="gallery">
+				<h2 class="section-heading">Galeria</h2>
+				<div class="variable-width gallery__box">
+					<div class="gallery__box-imgbox one">
+						<img src="./dist/img/gallery-huayra-bc.jpg" alt="" />
+						<div class="whats-model">
+							<h3>Pagani Huayra BC</h3>
+						</div>
+					</div>
+					<div class="gallery__box-imgbox">
+						<img src="./dist/img/gallery-huayra-epitome.jpg" alt="" />
+						<div class="whats-model">
+							<h3>Pagani Huayra Epitome</h3>
+						</div>
+					</div>
+					<div class="gallery__box-imgbox">
+						<img src="./dist/img/gallery-zonda-fantasma-evo.jpg" alt="" />
+						<div class="whats-model">
+							<h3>Pagani Zonda Fantasma Evo</h3>
+						</div>
+					</div>
+					<div class="gallery__box-imgbox">
+						<img src="./dist/img/gallery-huayra-nc.jpg" alt="" />
+						<div class="whats-model">
+							<h3>Pagani Huayra NC</h3>
+						</div>
+					</div>
+					<div class="gallery__box-imgbox">
+						<img src="./dist/img/gallery-pagani-imola.jpg" alt="" />
+						<div class="whats-model">
+							<h3>Pagani Huayra Imola</h3>
+						</div>
+					</div>
+					<div class="gallery__box-imgbox">
+						<img src="./dist/img/gallery-zonda-cinque.jpg" alt="" />
+						<div class="whats-model">
+							<h3>Pagani Zonda Cinque</h3>
+						</div>
+					</div>
+
+					<div class="gallery__box-imgbox">
+						<img src="./dist/img/gallery-utopia.jpg" alt="" />
+						<div class="whats-model">
+							<h3>Pagani Utopia</h3>
+						</div>
+					</div>
+					<div class="gallery__box-imgbox">
+						<img src="./dist/img/gallery-huayra-zonda-760.jpg" alt="" />
+						<div class="whats-model">
+							<h3>Pagani Zonda 760 RSJX</h3>
+						</div>
+					</div>
+				</div>
+				<p class="more-photos">
+					Chcesz zobaczyć więcęj zdjęć?
+					<a href="./gallery.html">Kliknij tutaj</a>
+				</p>
+			</section>
+
+			<section class="contact section-padding" id="contact">
+				<h2 class="section-heading">Kontakt</h2>
+				<div class="contact__box">
+					<div class="contact__column contact__left-column">
+						<h3 class="contact__heading">Fabryka Pagani we Włoszech</h3>
+						<p class="contact__text">ul. Via dell'Industria, 26</p>
+						<p class="contact__text">41018 San Cesario sul Panaro</p>
+						<p class="contact__text">+39 059 4739201</p>
+						<p class="contact__text">info@pagani.com</p>
+					</div>
+					<div class="contact__column contact__mid-column">
+						<h3 class="contact__heading">Social Media</h3>
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-linkedin-in"></i></a>
+					</div>
+
+					<div class="contact__column contact__right-column">
+						<h3 class="contact__heading">Oficjalny dealer w Polsce</h3>
+						<p class="contact__text">ul. Wirażowa 21</p>
+						<p class="contact__text">02-158</p>
+						<p class="contact__text">+48 532 433 739</p>
+						<p class="contact__text">info@paganiofwarsaw.com</p>
+					</div>
+				</div>
+				<!-- tutaj zrobic przycisk znajdz najblizszego delaera i w jakims pliku loc.js zrobic z 5 miejsc w europie i tam w danych wpisac latitude i  -->
+			</section>
+		</main>
+		<!-- swiper -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<!-- slick -->
+		<script
+			type="text/javascript"
+			src="//code.jquery.com/jquery-1.11.0.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+		></script>
+		<script type="text/javascript" src="dist/js/slick_min.js"></script>
+
+		<!-- my js -->
+		<script src="./dist/js/main_min.js"></script>
+	</body>
+</html>
